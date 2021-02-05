@@ -29,14 +29,14 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-assembly-plugin</artifactId>
-	<configuration>
-	  <archive>
-	    <manifest>
-	      <mainClass>${mainApplication}</mainClass>
-	    </manifest>
-	  </archive>
-	</configuration>
+	    <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+	      <archive>
+	        <manifest>
+	          <mainClass>${mainApplication}</mainClass>
+	        </manifest>
+	      </archive>
+	    </configuration>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -52,7 +52,7 @@
       <plugin>
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
-        <version>${jettyVersion}</version>
+        <version>8.1.0.RC0</version>
       </plugin>
     </plugins>
   </build>
