@@ -46,7 +46,7 @@ public class Application extends AbstractHandler
     }
 
     private static int getPort() {
-        System.out.println(System.getenv().toString());
+        // Make sure to set this environment variable
         return Integer.parseInt(System.getenv().get("PORT"));
     }
 

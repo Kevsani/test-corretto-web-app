@@ -4,10 +4,10 @@
  
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
-  <artifactId>sample-app</artifactId>
+  <artifactId>projects-site</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
-  <name>Java Sample App</name>
+  <name>Java Projects site</name>
  
   <properties>
     <!-- You can use a later version if you are are using Java 8 -->
