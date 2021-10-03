@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c360657-f0d0-4834-b6b1-56aeb0a66f8d" name="Default Changelist" comment="A working corretto sample">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="7c360657-f0d0-4834-b6b1-56aeb0a66f8d" name="Default Changelist" comment="changed the project name to projects-site">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_ws_spring_ws_core_3_0_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_ws_spring_xml_3_0_9_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects-site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/projects-site.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/projects/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +24,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="NodePackageJsonFileManager">
@@ -36,7 +49,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -52,7 +68,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31609195" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -61,13 +77,19 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean install" />
       <command value="mvn jar:jar" />
       <command value="mvn build" />
-      <command value="mvn assembly:assembly -DdescriptorId=jar-with-dependencies" />
       <command value="mvn web" />
       <command value="mvn web:java -jar target/sample-app-1.0-jar-with-dependencies.jar" />
       <command value="mvn exec:java" />
+      <command value="mvn assembly:help" />
+      <command value="mvn assembly:assembly -DdescriptorId=jar-with-dependencies" />
+      <command value="mvn compile" />
+      <command value="mvn assembly:single" />
+      <command value="mvn compile assembly:single" />
+      <command value="mvn java -jar" />
+      <command value="mvn clean package" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunManager" selected="Maven.build">
@@ -176,8 +198,8 @@
             </option>
             <option name="goals">
               <list>
-                <option value="assembly:assembly" />
-                <option value="-DdescriptorId=jar-with-dependencies" />
+                <option value="clean" />
+                <option value="package" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -217,6 +239,15 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="projects-site" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -229,9 +260,13 @@
     <list>
       <item itemvalue="Maven.projects-site [-X,exec:java]" />
       <item itemvalue="Maven.build" />
+      <item itemvalue="Spring Boot.Application" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7c360657-f0d0-4834-b6b1-56aeb0a66f8d" name="Default Changelist" comment="" />
@@ -244,7 +279,11 @@
       <workItem from="1612516411080" duration="672000" />
       <workItem from="1612517355667" duration="935000" />
       <workItem from="1612553639454" duration="6000" />
-      <workItem from="1629168815695" duration="4525000" />
+      <workItem from="1629168815695" duration="5277000" />
+      <workItem from="1629229841706" duration="10000" />
+      <workItem from="1631477705977" duration="612000" />
+      <workItem from="1631544575308" duration="85000" />
+      <workItem from="1633274678389" duration="5666000" />
     </task>
     <task id="LOCAL-00001" summary="A working corretto sample">
       <created>1612516653494</created>
@@ -253,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612516653494</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changed the project name to projects-site">
+      <created>1629173721228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629173721228</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +333,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A working corretto sample" />
-    <option name="LAST_COMMIT_MESSAGE" value="A working corretto sample" />
+    <MESSAGE value="changed the project name to projects-site" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the project name to projects-site" />
   </component>
   <component name="masterDetails">
     <states>
